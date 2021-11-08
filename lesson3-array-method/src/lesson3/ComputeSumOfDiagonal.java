@@ -5,13 +5,17 @@ import java.util.Scanner;
 public class ComputeSumOfDiagonal {
 
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("SUM OF DIAGONAL");
-        System.out.println("Enter length of square matrix:");
-        int[][] arr = createASquareMatrix(3);
+        int inputLength = 0;
+        while (inputLength < 1) {
+            System.out.println("Enter length of square matrix:");
+            inputLength = scanner.nextInt();
+        }
+        int[][] arr = createASquareMatrix(inputLength);
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j]+"  ");
+                System.out.print(arr[i][j] + "  ");
             }
             System.out.println();
         }

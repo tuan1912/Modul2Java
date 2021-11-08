@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5791a649-6e81-41c5-8755-601bc5a302ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/ComputeSumOfDiagonal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/CountChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/CountNumberOfStudentPassTheExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/DeleteElementOfArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/FindMInValueOfArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/FindMaxValueOf2DMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/SumOfColumn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../XmindModul2/1.Introduction to Programming Using Java.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../XmindModul2/1.Introduction to Programming Using Java.xmind" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/FindMaxValueOf2DArrayMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson3-array-method/lesson3/ComputeSumOfDiagonal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson3-array-method/lesson3/ComputeSumOfDiagonal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson3/ComputeSumOfDiagonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/ComputeSumOfDiagonal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Modul2JAVA/ArrayMethod/insert-element/src/Main.java" />
   </component>
-  <component name="RunManager" selected="Application.CountChar">
+  <component name="RunManager" selected="Application.ComputeSumOfDiagonal">
     <configuration name="ComputeSumOfDiagonal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson3.ComputeSumOfDiagonal" />
       <module name="lesson3-array-method" />
@@ -120,10 +112,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ComputeSumOfDiagonal" />
         <item itemvalue="Application.CountChar" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.DeleteElementOfArray" />
-        <item itemvalue="Application.ComputeSumOfDiagonal" />
         <item itemvalue="Application.SumOfColumn" />
       </list>
     </recent_temporary>
