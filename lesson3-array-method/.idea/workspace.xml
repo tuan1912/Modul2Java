@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5791a649-6e81-41c5-8755-601bc5a302ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lesson3/DeleteAValueOfArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../XmindModul2/1.Introduction to Programming Using Java.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../XmindModul2/1.Introduction to Programming Using Java.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XmindModul2/4. Lớp và đối tượng trong Java.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../XmindModul2/4. Lớp và đối tượng trong Java.xmind" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lesson3-array-method/lesson3/ComputeSumOfDiagonal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson3-array-method/lesson3/ComputeSumOfDiagonal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/ComputeSumOfDiagonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/ComputeSumOfDiagonal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson3-array-method/lesson3/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson3-array-method/lesson3/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson3/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/Demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Modul2JAVA/ArrayMethod/insert-element/src/Main.java" />
   </component>
-  <component name="RunManager" selected="Application.ComputeSumOfDiagonal">
+  <component name="RunManager" selected="Application.DeleteAValueOfArray">
     <configuration name="ComputeSumOfDiagonal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson3.ComputeSumOfDiagonal" />
       <module name="lesson3-array-method" />
@@ -60,6 +62,19 @@
     </configuration>
     <configuration name="CountChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson3.CountChar" />
+      <module name="lesson3-array-method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteAValueOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson3.DeleteAValueOfArray" />
       <module name="lesson3-array-method" />
       <extension name="coverage">
         <pattern>
@@ -97,26 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumOfColumn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson3.SumOfColumn" />
-      <module name="lesson3-array-method" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DeleteAValueOfArray" />
+        <item itemvalue="Application.DeleteElementOfArray" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.ComputeSumOfDiagonal" />
         <item itemvalue="Application.CountChar" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.DeleteElementOfArray" />
-        <item itemvalue="Application.SumOfColumn" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +152,11 @@
           <url>file://$PROJECT_DIR$/src/lesson3/CountNumberOfStudentPassTheExam.java</url>
           <line>24</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lesson3/DeleteAValueOfArray.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
