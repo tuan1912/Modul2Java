@@ -1,6 +1,6 @@
 package quadratic_equation;
 
-public class QuadrationEquation {
+public class QuadrationEquations {
     // ax^2 + bx + c = 0
     //class QuadraticEquation
     //attributes: double a, b, c
@@ -14,11 +14,11 @@ public class QuadrationEquation {
     private double coefficientB;
     private double constantC;
 
-    public QuadrationEquation() {
+    public QuadrationEquations() {
 
     }
 
-    public QuadrationEquation(double coefficientA, double coefficientB, double constantC) {
+    public QuadrationEquations(double coefficientA, double coefficientB, double constantC) {
         this.coefficientA = coefficientA;
         this.coefficientB = coefficientB;
         this.constantC = constantC;

@@ -1,2 +1,4 @@
-package fan;public class main {
+package fan;
+
+public class Main {
 }
