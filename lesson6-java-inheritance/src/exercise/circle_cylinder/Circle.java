@@ -1,4 +1,4 @@
-package exercise;
+package exercise.circle_cylinder;
 
 public class Circle {
     // *** UML  ***
