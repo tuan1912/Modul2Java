@@ -2,7 +2,7 @@ package manage_staffs_homeworks;
 
 public abstract class Staff {
     private static int id = 1;
-    private int staffId ;
+    private int staffId = id++;
     private String name;
     private int age;
     private int dailyWages;
@@ -24,8 +24,8 @@ public abstract class Staff {
         return dailyWages;
     }
 
-    public  void setStaffId() {
-        staffId = id++;
+    public static int getId() {
+        return id;
     }
 
     public void setName(String name) {

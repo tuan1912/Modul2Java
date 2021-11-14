@@ -6,7 +6,7 @@ public class Employee extends Staff{
 
     }
     public Employee(String name, int age,int dailyWages, double businessDays){
-        setStaffId();
+
         setName(name);
         setAge(age);
         setDailyWages(dailyWages);

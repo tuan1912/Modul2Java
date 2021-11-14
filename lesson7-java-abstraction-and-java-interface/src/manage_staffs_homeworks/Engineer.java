@@ -6,7 +6,7 @@ public class Engineer extends Staff {
 
     }
     public Engineer(String name, int age, int dailyWages, double businessDays, double payRate){
-        setStaffId();
+
         setName(name);
         setAge(age);
         setDailyWages(dailyWages);
