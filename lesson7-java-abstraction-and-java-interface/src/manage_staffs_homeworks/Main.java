@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Employee employeeNumberOne = new Employee("Tú",12,1000,20);
-        Employee employeeNumberTwo = new Employee("Tuấn",11,100,18);
-        Engineer engineerNumberOne = new Engineer("Toàn",12,1000,20,2.5);
+        Employee employeeNumberOne = new Employee("A",12,1000,20);
+        Employee employeeNumberTwo = new Employee("C",11,100,18);
+        Engineer engineerNumberOne = new Engineer("B",12,1000,20,2.5);
         Staff[] arrayOfStaff = new Staff[3];
         arrayOfStaff[0] = employeeNumberOne;
         arrayOfStaff[1] = employeeNumberTwo;
@@ -65,7 +65,7 @@ public class Main {
                                 arrayOfStaff = Controller.deleteStaffByName(inputNameCase3, countName, arrayOfStaff);
                                 break;
                             case 2:
-                                System.out.println("Enter staff id you wannna delete:");
+                                System.out.println("Enter staff id you wanna delete:");
                                 int inputStaffIdCase3 = scanner.nextInt();
                                 int indexOfStaffIdCase3 = Controller.findIndexByStaffId(inputStaffIdCase3, arrayOfStaff);
                                 if (indexOfStaffIdCase3 > -1) arrayOfStaff = Controller.deleteStaffByStaffId(indexOfStaffIdCase3,arrayOfStaff);
@@ -78,7 +78,7 @@ public class Main {
                     System.out.println("Enter a name:");
                     String inputNameCase4 = scanner.nextLine();
                     Controller.findStaffByName(inputNameCase4, arrayOfStaff);
-                    System.out.println("Enter staff id you wanna edit infofmation:");
+                    System.out.println("Enter staff id you wanna edit information:");
                     int inputStaffIdCase4 =  scanner.nextInt();
                     int indexOfStaffIdCase4 = Controller.findIndexByStaffId(inputStaffIdCase4,arrayOfStaff);
                     if (indexOfStaffIdCase4> -1) {
@@ -87,17 +87,31 @@ public class Main {
                         } else {
                             Controller.editInformationEngineer(indexOfStaffIdCase4,arrayOfStaff);
                         }
-                    }
-
-
+                    } else System.out.println("Oops!");
                     break;
                 case 5:
+                    System.out.println("Which one do you wanna show?");
+                    System.out.println("1. Employee");
+                    System.out.println("2. Engineer");
+                    int choiceShow = 0;
+                    while (choiceShow != 1 && choiceShow != 2){
+                        choiceShow = scanner.nextInt();
+                        switch (choiceShow){
+                            case 1:
+                                Controller.showEmployeeSalaryTable(arrayOfStaff);
+                                break;
+                            case 2:
+                                Controller.showEngineerSalaryTable(arrayOfStaff);
+                                break;
+                        }
+                    }
                     break;
                 case 6:
+                    Controller.sortSalaryTableByName(arrayOfStaff);
+                    Controller.showAllOfStaff(arrayOfStaff);
                     break;
                 case 7:
                     choice = 0;
-
             }
         }
 
