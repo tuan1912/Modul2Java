@@ -54,6 +54,8 @@ public class Main {
                     System.out.println("Enter a name:");
                     String inputNameCase3 = scanner.nextLine();
                     int countName = Controller.findStaffByName(inputNameCase3, arrayOfStaff);
+                    if (countName <=  0)   break;
+
                     System.out.println("which one do you want to delete");
                     System.out.println("1. All those name");
                     System.out.println("2. Delete by Staff Id");
@@ -66,7 +68,7 @@ public class Main {
                                 break;
                             case 2:
                                 System.out.println("Enter staff id you wanna delete:");
-                                int inputStaffIdCase3 = scanner.nextInt();
+                                int inputStaffIdCase3 = scanner.nextInt();// Interger.parseInt(scanner.nextLine())
                                 int indexOfStaffIdCase3 = Controller.findIndexByStaffId(inputStaffIdCase3, arrayOfStaff);
                                 if (indexOfStaffIdCase3 > -1) arrayOfStaff = Controller.deleteStaffByStaffId(indexOfStaffIdCase3,arrayOfStaff);
                                 else System.out.println("Oops! ");
@@ -75,6 +77,7 @@ public class Main {
                     }
                     break;
                 case 4:
+                    scanner.nextLine();
                     System.out.println("Enter a name:");
                     String inputNameCase4 = scanner.nextLine();
                     Controller.findStaffByName(inputNameCase4, arrayOfStaff);

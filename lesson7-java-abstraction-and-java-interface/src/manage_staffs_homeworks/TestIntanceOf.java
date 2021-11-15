@@ -2,17 +2,13 @@ package manage_staffs_homeworks;
 
 public class TestIntanceOf {
     public static void main(String[] args) {
-        Staff employeeNumberOne = new Employee();
-        Employee employeeNumberTwo = new Employee();
-        Engineer engineerNumberOne = new Engineer();
+        Employee employeeNumberOne = new Employee("A",12,1000,20);
+        Employee employeeNumberTwo = new Employee("C",11,100,18);
+        Engineer engineerNumberOne = new Engineer("B",12,1000,20,2.5);
         Staff[] arrayOfStaff = new Staff[3];
         arrayOfStaff[0] = employeeNumberOne;
         arrayOfStaff[1] = employeeNumberTwo;
         arrayOfStaff[2] = engineerNumberOne;
-        Employee em1 = (Employee) employeeNumberOne;
-        if (employeeNumberTwo instanceof Staff) System.out.println("hohoho");
-        else System.out.println("huhuhu");
-        Controller.showAllOfStaff(arrayOfStaff);
-        System.out.println(engineerNumberOne.getStaffId());
+        System.out.println(employeeNumberOne.getSalary());
     }
 }

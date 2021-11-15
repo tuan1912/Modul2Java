@@ -79,7 +79,8 @@ public class Controller {
 
     public static int findIndexByStaffId(int staffId, Staff[] array) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i].getStaffId() == staffId)
+            boolean isStaff = array[i].getStaffId() == staffId;
+            if (isStaff)
                 return i;
         }
         return -1;
@@ -145,11 +146,12 @@ public class Controller {
     }
 
     public static void sortSalaryTableByName(Staff[] array) {
-        System.out.println("array.length == " + array.length);
+//        System.out.println("array.length == " + array.length);
         for (int j = 0; j < array.length; j++) {
             for (int i = 0; i < array.length - 1; i++) {
-                System.out.println("i = " + i);
-                System.out.println("check == " + (array[i].getName().compareTo(array[i + 1].getName()) > 0));
+                // debug
+//                System.out.println("i = " + i);
+//                System.out.println("check == " + (array[i].getName().compareTo(array[i + 1].getName()) > 0));
                 if (array[i].getName().compareTo(array[i + 1].getName()) > 0) {
                     Staff temp = array[i];
                     array[i] = array[i + 1];
