@@ -52,7 +52,7 @@ public class ManagementServiceImpl implements IManagement {
     @Override
     public void sortWithAverage() {
         Intern temp;
-        for (int i = 0; i < listOfIntern.size(); i++)
+        for (int i = 0; i < listOfIntern.size()-1; i++)
             if (listOfIntern.get(i).getGradeAverage() > listOfIntern.get(i + 1).getGradeAverage()) {
                 temp = listOfIntern.get(i);
                 listOfIntern.set(i, listOfIntern.get(i + 1));
