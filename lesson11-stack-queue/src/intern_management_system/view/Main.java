@@ -38,9 +38,6 @@ public class Main {
             case 7:
                 internView.getSumOfGrades();
                 break;
-
-
-
         }
     }
     public static void main(String[] args) {

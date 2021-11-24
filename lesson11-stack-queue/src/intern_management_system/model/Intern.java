@@ -29,7 +29,7 @@ public class Intern extends Person {
     public String toString() {
         return "Intern{" + "intern id = "+ internId +
                 super.toString()+
-                " gradeAverage=" + gradeAverage +
+                ", gradeAverage= " + gradeAverage +
                 '}';
     }
 }

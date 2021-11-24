@@ -77,7 +77,8 @@ public class InternView {
         internController.sortWithAverage();
         chooseFromMenu();
     }
-    public double getSumOfGrades(){
-        return internController.getSumOfGrades();
+    public void getSumOfGrades(){
+        System.out.println(internController.getSumOfGrades());
+        chooseFromMenu();
     }
 }
