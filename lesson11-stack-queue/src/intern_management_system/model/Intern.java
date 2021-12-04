@@ -1,6 +1,6 @@
 package intern_management_system.model;
 
-public class Intern extends Person {
+public class Intern extends Person implements Comparable {
     private int internId;
     private double gradeAverage;
     public Intern(){
@@ -31,5 +31,14 @@ public class Intern extends Person {
                 super.toString()+
                 ", gradeAverage= " + gradeAverage +
                 '}';
+    }
+
+
+
+    @Override
+    public int compareTo(Object intern) {
+        if (gradeAverage == ((Intern)intern).getGradeAverage()) return 0;
+        else if (gradeAverage > ((Intern)intern).getGradeAverage()) return 1;
+        else return -1;
     }
 }

@@ -9,9 +9,9 @@ public class InternView {
     InternController internController = new InternController();
     Scanner scanner = new Scanner(System.in);
 
-    public void chooseFromMenu() {
+    public void chooseQuitOrContinue() {
         System.out.println("Enter'quit' or anyone else ");
-        String enterOrQuit = scanner.next();
+        String enterOrQuit = scanner.nextLine();
         if (!enterOrQuit.equalsIgnoreCase("quit")) {
             new Main();
         } else {
@@ -23,7 +23,7 @@ public class InternView {
         for (int i = 0; i < internController.findAll().size(); i++) {
             System.out.println(internController.findAll().get(i).toString());
         }
-        chooseFromMenu();
+        chooseQuitOrContinue();
     }
     public void findIndexOfInternById(){
         System.out.println("Enter intern id you wanna delete:");
@@ -39,7 +39,7 @@ public class InternView {
         double gradeAverage = Double.parseDouble(scanner.next());
         Intern intern = new Intern(name, age, gradeAverage);
         internController.createIntern(intern);
-        chooseFromMenu();
+        chooseQuitOrContinue();
     }
 
     public boolean isIntern(int internId) {
@@ -56,7 +56,7 @@ public class InternView {
         if (isIntern(internId)) {
             internController.removeInternByInternId(internId);
         }
-        chooseFromMenu();
+        chooseQuitOrContinue();
     }
 
     public void changeInformationOfIntern() {
@@ -71,14 +71,14 @@ public class InternView {
             double gradeAverage = Double.parseDouble(scanner.next());
             internController.changeInfoByInternId(internId, name, age, gradeAverage);
         }
-        chooseFromMenu();
+        chooseQuitOrContinue();
     }
     public void sortWithAverage(){
         internController.sortWithAverage();
-        chooseFromMenu();
+        chooseQuitOrContinue();
     }
     public void getSumOfGrades(){
         System.out.println(internController.getSumOfGrades());
-        chooseFromMenu();
+        chooseQuitOrContinue();
     }
 }

@@ -3,8 +3,9 @@ package intern_management_system.service;
 import intern_management_system.model.Intern;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
-public class ManagementServiceImpl implements IManagement {
+public class ManagementServiceImpl implements IManagement  {
     static ArrayList<Intern> listOfIntern = new ArrayList<>(0);
 
     static {
@@ -48,16 +49,17 @@ public class ManagementServiceImpl implements IManagement {
         listOfIntern.get(index).setName(name);
         listOfIntern.get(index).setGradeAverage(gradeAverage);
     }
-
     @Override
     public void sortWithAverage() {
-        Intern temp;
-        for (int i = 0; i < listOfIntern.size()-1; i++)
-            if (listOfIntern.get(i).getGradeAverage() > listOfIntern.get(i + 1).getGradeAverage()) {
-                temp = listOfIntern.get(i);
-                listOfIntern.set(i, listOfIntern.get(i + 1));
-                listOfIntern.set(i + 1, temp);
-            }
+//        Intern temp;
+//        for (int i = 0; i < listOfIntern.size()-1; i++)
+//            if (listOfIntern.get(i).getGradeAverage() > listOfIntern.get(i + 1).getGradeAverage()) {
+//                temp = listOfIntern.get(i);
+//                listOfIntern.set(i, listOfIntern.get(i + 1));
+//                listOfIntern.set(i + 1, temp);
+//            }
+        Collections.sort(listOfIntern);
+
     }
 
     @Override
@@ -69,4 +71,8 @@ public class ManagementServiceImpl implements IManagement {
         }
         return sumOfGrades;
     }
+
+
+
+
 }

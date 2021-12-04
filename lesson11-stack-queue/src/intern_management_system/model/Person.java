@@ -1,6 +1,6 @@
 package intern_management_system.model;
 
-public class Person {
+public abstract class Person {
     static int id = 1;
     private String name;
     private int age;
@@ -27,4 +27,6 @@ public class Person {
                 ", name='" + name + '\'' +
                 ", age=" + age ;
     }
+
+
 }

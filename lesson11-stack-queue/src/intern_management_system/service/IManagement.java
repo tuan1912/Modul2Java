@@ -18,4 +18,6 @@ public interface IManagement {
     void sortWithAverage();
 
     double getSumOfGrades();
+
+
 }
